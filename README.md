@@ -1,6 +1,6 @@
 # GameCity
 
-# Link to Deployed Site
+## Link to Deployed Site
   [GameCity](www.google.com) - Most recent stable deployment version
    
 ## Installation
