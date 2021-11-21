@@ -28,11 +28,25 @@ if (isset($_COOKIE['mycookie'])) {
 			margin-top: .5em
 		}
 	</style>
+	<script>
+		function validateForm() {
+			let x = document.forms["login"]["name"].value;
+			if (x == "") {
+				alert("Name must be filled out");
+				return false;
+			}
 
+			let y = document.forms["login"]["password"].value;
+			if (y == "") {
+				alert("Password must be filled out");
+				return false;
+			}
+		}
+	</script>
 </head>
 
 <main>
-	<form action="includes/check.inc.php" method="post">
+	<form name="login" action="includes/check.inc.php" method="post" onsubmit="return validateForm()">
 		<label>Username</label>
 		<input type="text" name="name" class="mov"><br>
 		<label>Password</label>
