@@ -5,7 +5,6 @@ if (isset($_COOKIE['mycookie'])) {
 } else {
 }
 ?>
-<!-- test branch -->
 
 <head>
 	<style>
